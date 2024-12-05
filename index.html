@@ -3,67 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Tuan's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <h1>Tuan's Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
   <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Tuan, a Flutter Developer and DevOps Engineer. Here are some of the projects I've worked on:</p>
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#todo-app-flutter">Todo App Flutter</a></li>
-      <li><a href="#to-do-list-application">To-Do List Application</a></li>
-    </ul>
-    <h2 id="todo-app-flutter">Todo App Flutter</h2>
-    <p>A simple todo app built with Flutter and Firebase. <a href="https://github.com/tuan4886n/todo_app_flutter" target="_blank">GitHub Repository</a></p>
-    <p>Technologies Used:</p>
-    <ul>
-      <li>Flutter</li>
-      <li>Firebase</li>
-      <li>Docker</li>
-      <li>GitHub Actions</li>
-    </ul>
-    <p>Features:</p>
-    <ul>
-      <li>Add, edit, delete, and mark tasks as completed</li>
-      <li>User authentication with Firebase</li>
-      <li>CI/CD pipeline with GitHub Actions</li>
-    </ul>
-    <p>Achievements:</p>
-    <ul>
-      <li>Improved development efficiency with Docker</li>
-      <li>Automated build and release with GitHub Actions</li>
-      <li>User-friendly and responsive interface</li>
-    </ul>
-    <h2 id="to-do-list-application">To-Do List Application</h2>
-    <p>A To-Do List application developed with Flask, PostgreSQL, Docker, and Jenkins. <a href="https://github.com/tuan4886n/To-Do-List" target="_blank">GitHub Repository</a></p>
-    <p>Technologies Used:</p>
-    <ul>
-      <li>Flask</li>
-      <li>PostgreSQL</li>
-      <li>Docker, Docker Compose</li>
-      <li>Prometheus</li>
-      <li>Grafana</li>
-      <li>Jenkins</li>
-    </ul>
-    <p>Features:</p>
-    <ul>
-      <li>Task management</li>
-      <li>Containerized with Docker</li>
-      <li>Monitoring with Prometheus and Grafana</li>
-      <li>CI/CD pipeline with Jenkins</li>
-    </ul>
-    <p>Achievements:</p>
-    <ul>
-      <li>Efficient task management</li>
-      <li>Automated deployment with Jenkins</li>
-      <li>Comprehensive system monitoring</li>
-      <li>Improved environment consistency with Docker</li>
-    </ul>
-    <footer>
-      <p><a href="mailto:your_email@example.com">Contact Me</a></p>
-    </footer>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Hello, I'm Tuan. I have many years of self-study and a deep passion for computer networks, aspiring to become a DevOps Engineer. Despite not having formal work experience, I am determined and eager to seize opportunities to prove my skills and grow professionally. Here are some of the projects I've worked on:</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="images/todo_app_flutter.jpg" alt="Todo App Flutter">
+        <h3>Todo App Flutter</h3>
+        <p><strong>Technologies Used:</strong> Flutter, Firebase, Docker, GitHub Actions</p>
+        <p><strong>Project Description:</strong></p>
+        <ul>
+          <li>Building a Todo App: Designed and developed a Todo application with Flutter, allowing users to add, edit, delete, and mark tasks as completed.</li>
+          <li>Integrating Firebase: Configured Firebase Authentication for user authentication and Firestore for storing task data. Firestore provides a real-time database to synchronize data across devices.</li>
+          <li>Using Docker: Created Dockerfile and Docker Compose to build and deploy the application. Docker ensures a consistent development and deployment environment, minimizing configuration issues.</li>
+          <li>CI/CD with GitHub Actions: Set up an automated CI/CD pipeline with GitHub Actions to build and release APKs. The pipeline includes steps for code checks, building the application, and generating new releases.</li>
+        </ul>
+        <p><strong>Achievements:</strong></p>
+        <ul>
+          <li>Improved Development Efficiency: Used Docker to standardize the development and deployment environment, reducing environment configuration issues.</li>
+          <li>Continuous Integration and Deployment (CI/CD): Ensured continuous development and release of the application with GitHub Actions, reducing response times and quickly deploying new releases.</li>
+          <li>User-Friendly Interface: Designed a user-friendly and responsive interface, improving user experience. Used Flutter to create custom widgets and a visually appealing UI.</li>
+        </ul>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/tuan4886n/todo_app_flutter" target="_blank">Todo App Flutter</a></p>
+      </div>
+      <div class="project">
+        <img src="images/to_do_list_application.jpg" alt="To-Do List Application">
+        <h3>To-Do List Application</h3>
+        <p><strong>Technologies Used:</strong> Flask, PostgreSQL, Docker, Docker Compose, Prometheus, Grafana, Jenkins</p>
+        <p><strong>Project Description:</strong></p>
+        <ul>
+          <li>Developing a To-Do List Application: Designed and developed a To-Do List application with Flask and PostgreSQL, allowing users to manage daily tasks. Flask was used as the server-side framework, while PostgreSQL served as the primary database.</li>
+          <li>Containerizing the Application: Used Docker and Docker Compose to containerize the application. Created Dockerfile to build the application container and Docker Compose to manage dependent services.</li>
+          <li>Monitoring and Analytics: Set up Prometheus to collect monitoring metrics from the system. Used Grafana to visualize monitoring data, providing a comprehensive view of system performance and identifying potential issues.</li>
+          <li>CI/CD with Jenkins: Set up a CI/CD pipeline with Jenkins to automate building, testing, and deploying the application. The Jenkins pipeline includes steps to build, test, and deploy the application automatically to the production environment.</li>
+        </ul>
+        <p><strong>Achievements:</strong></p>
+        <ul>
+          <li>Efficient Task Management: The application helps users manage daily tasks efficiently with a simple and user-friendly interface.</li>
+          <li>Automated Deployment Process: Used Jenkins to automate the build and deployment processes, saving time and effort, ensuring continuous and stable deployment.</li>
+          <li>Comprehensive System Monitoring: Set up comprehensive monitoring with Prometheus and Grafana, helping to detect issues early, optimize system performance, and ensure stable operation.</li>
+        </ul>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/tuan4886n/To-Do-List" target="_blank">To-Do List Application</a></p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: tuan4886n@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/tuan4886n" target="_blank">tuan4886n</a></p>
+      <!-- You can add LinkedIn after creating an account -->
+      <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">your LinkedIn profile</a></p> -->
+    </section>
   </div>
+  <footer>
+    <p>&copy; 2024 Tuan's Portfolio</p>
+  </footer>
 </body>
 </html>
