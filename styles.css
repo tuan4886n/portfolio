@@ -2,17 +2,45 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
     text-align: center;
   }
+  
   h1, h2 {
     color: #333;
   }
+  
   a {
     text-decoration: none;
     color: #0099ff;
   }
+  
   a:hover {
     text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
   }
   
